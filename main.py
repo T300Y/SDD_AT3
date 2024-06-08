@@ -81,7 +81,7 @@ def validate_student_schedule(schedule):
 
 def generate_timetable(domains, time_slots, rooms, teacher_availability):
     '''Generates a valid timetable using constraint satisfaction algo AC-3'''
-    # Apply AC-3 algorithm to enforce arc consistency#
+    # Apply AC-3 algorithm to enforce arc consistency
     if not ac3(domains):
         raise Exception("No valid timetable found after applying AC-3")
     schedule = {}
