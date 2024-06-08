@@ -92,7 +92,7 @@ def generate_timetable(domains, time_slots, rooms, teacher_availability):
         raise Exception("No valid timetable found")
 def helper(schedule, domains, time_slots, rooms, teacher_availability, slot_index):
     """Recursive backtracking algorithm"""
-    # Base case #
+    # Base case 
     if slot_index >= len(time_slots):
         return True
 
