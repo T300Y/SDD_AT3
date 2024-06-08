@@ -85,7 +85,7 @@ def generate_timetable(domains, time_slots, rooms, teacher_availability):
     if not ac3(domains):
         raise Exception("No valid timetable found after applying AC-3")
     schedule = {}
-    # Start backtracking
+    # Start backtracking#
     if helper(schedule, domains, time_slots, rooms, teacher_availability, 0):
         return schedule
     else:
