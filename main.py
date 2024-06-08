@@ -96,7 +96,7 @@ def helper(schedule, domains, time_slots, rooms, teacher_availability, slot_inde
     if slot_index >= len(time_slots):
         return True
 
-    # Get the current time slot to be assigned#
+    # Get the current time slot to be assigned
     current_slot = time_slots[slot_index]
 
     # Try each possible assignment 
