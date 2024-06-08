@@ -14,7 +14,7 @@ def ac3(domains):
     """Maintains arc consistency on domains using AC-3"""
     arc_queue = [(slot1, slot2) for slot1 in domains for slot2 in domains if slot1 != slot2] # Creates a queue of all arcs needing processing
     while arc_queue:
-        # Pops first arc from queue#
+        # Pops first arc from queue
         slot1, slot2 = arc_queue.pop(0)
         # Revises domain of slot1 to ensure consistency with slot2
         if revise(slot1, slot2, domains):
