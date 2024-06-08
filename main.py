@@ -38,7 +38,7 @@ def revise(slot1, slot2, domains):
     return revised
     
 def is_consistent(value1, value2):
-    # Check if two assignments are consistent
+    # Check if two assignments are consistent#
     return not (value1['teacher'] == value2['teacher'] or value1['room'] == value2['room'])
 
 def get_available_teachers(slot, teacher_availability):
